@@ -1,0 +1,32 @@
+{
+  "name": "genesis-user-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest --watch jest --config ./jest.config.cjs"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.10",
+    "@testing-library/dom": "^8.16.0",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@types/jest": "^28.1.6",
+    "fetch-mock": "^9.11.0",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "sass": "^1.54.0",
+    "ts-jest": "^28.0.7",
+    "typescript": "^4.7.4",
+    "vite": "^3.0.0"
+  },
+  "dependencies": {
+    "@testing-library/user-event": "^14.3.0",
+    "babel-jest": "^28.1.3"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  }
+}

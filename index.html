@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genesis User App</title>
+  <link rel="stylesheet" href="./src/style.scss">
+</head>
+
+<body>
+  <section class="register">
+    <div class="container">
+      <div id="modal" class="hide">
+        <div class="modal-body register__input">
+          <div class="register__header">
+            <h1>Registre o usuário</h1>
+            <button id="close-modal">x</button>
+          </div>
+          <form action="" id="form">
+            <div class="form-control">
+              <input type="text" name="name" id="inputName" placeholder="Enter name here" maxlength="25">
+              <small>error</small>
+            </div>
+            <div class="form-control">
+              <input type="text" name="cpf" id="inputCPF" placeholder="Enter your CPF here" maxlength="25">
+              <small>error</small>
+            </div>
+            <div class="form-control">
+              <input type="phone" name="phone" id="inputPhone" placeholder="Enter your phone number here"
+                maxlength="25">
+              <small>error</small>
+            </div>
+            <div class="form-control">
+              <input type="mail" name="mail" id="inputMail" placeholder="Enter your e-mail here">
+              <small>error</small>
+            </div>
+            <button type="submit" class="registerButton" id="inputUserButton">
+              <span class="button__text">Cadastrar</span>
+            </button>
+            <button type="submit" class="updateButton" id="updateUserButton">
+              <span class="button__text">Atualizar</span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="register__result">
+        <h2>Todos os usuários</h2>
+        <div id="names"></div>
+      </div>
+      <button id="open-modal">Novo Usuário</button>
+      <div id="fade" class="hide"></div>
+    </div>
+  </section>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
